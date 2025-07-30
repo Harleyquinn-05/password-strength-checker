@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #94e80e;
+}
+
+.container {
+  background: #1f2a40;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(133, 57, 138, 0.5);
+  width: 500px;
+  text-align: center;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e3b55;
+  color: #d5c536;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="password"]:focus {
+  background-color: #394966;
+  box-shadow: 0 0 5px #fbff00;
+}
+
+#strengthText {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#suggestions {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Strength Text Colors */
+.weak {
+  color: #ff4d4d;
+}
+
+.moderate {
+  color: #ffae42;
+}
+
+.strong {
+  color: #57e32c;
+}
+
+.very-strong {
+  color: #00c3ff;
+}
+
+/* Strength Bar */
+.strength-bar {
+  height: 8px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.3s ease, background 0.3s ease;
+  border-radius: 4px;
+}
+
+
